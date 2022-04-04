@@ -66,7 +66,9 @@
       <section class="hero">
         <div class="container hero-img">
           <h1 class="hero-text">Эффективные решения для вашего бизнеса</h1>
-          <button class="btn" type="button" data-modal-open>Заказать услугу</button>
+          <button class="btn" type="button" data-modal-open>
+            Заказать услугу
+          </button>
         </div>
       </section>
       <!-- features-section -->
@@ -319,6 +321,7 @@
           </ul>
         </div>
       </section>
+      <!-- regular customers -->
       <section class="client-section">
         <h2 class="section-title">Постоянные клиенты</h2>
         <div class="container">
@@ -435,17 +438,73 @@
             </li>
           </ul>
         </div>
+        <div class="sabscription">
+          <b class="sabscription-title">Подпишитесь на рассылку</b>
+          <form class="sabscription-form">
+            <input
+              class="sabscription-mail"
+              type="email"
+              name="email"
+              placeholder="E-mail"
+            />
+            <button class="sabscription-btn" type="submit">
+              Подписаться
+              <svg class="sabsctiption-svg" width="24" height="24">
+                <use href="./images/sprait.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
+    <!-- backdrop -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button class="model-close"  type="button" data-modal-close>
-        <svg width="30" height="30">
-          <use href="./images/sprait.svg#icon-close"></use>
-        </svg>
-      </button>
+        <button class="model-close" type="button" data-modal-close>
+          <svg width="30" height="30">
+            <use href="./images/sprait.svg#icon-close"></use>
+          </svg>
+        </button>
+        <div class="bd-form">
+          <b class="bd-form-title">Оставьте свои данные, мы вам перезвоним</b>
+          <form class="bd-form-callback">
+            <div class="bd-form-filed">
+              <label for="firstname">Имя</label>
+              <input type="text" name="text" id="firstname" />
+            </div>
+            <div class="bd-form-callback">
+              <label for="tel">Телефон</label>
+              <input type="tel" name="tel" id="tel" />
+            </div>
+            <div class="bd-form-callback">
+              <label for="email">Почта</label>
+              <input type="email" name="email" id="email" />
+            </div>
+            <div class="bd-form-callack">
+              <label for="comment">Комментарий</label>
+              <textarea
+                name="comment"
+                id="comment"
+                cols="30"
+                rows="10"
+                placeholder="Введите текст"
+              ></textarea>
+            </div>
+            <div class="">
+              <input type="checkbox" name="checkbox" id="checkbox" />
+              <label for="checkbox"
+                >Соглашаюсь с рассылкой и принимаю
+                <a href="">Условия договора</a>
+              </label>
+            </div>
+            <div class="">
+              <button type="submit">Отправить</button>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
+    <!-- js -->
     <script src="./modal.js"></script>
   </body>
 </html>
